@@ -32,6 +32,20 @@ header h3 {
   width: 70px;
 }
 
+main {
+  padding-top: 70px;
+}
+
+#paragraph-section {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#paragraph-section p {
+  font-size: 22px;
+}
+
 .gallery-img {
   width: 150px;
 }
