@@ -57,4 +57,10 @@ figcaption {
     background-color: red;
     font-size: 19px;
   }
+
+  section {
+    display: grid;
+    /* https://www.w3schools.com/cssref/pr_grid-template-columns.asp */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
