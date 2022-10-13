@@ -76,4 +76,8 @@ figcaption {
     background-color: yellow;
     font-size: 18px;
   }
+
+  section {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
