@@ -66,5 +66,7 @@ figcaption {
 }
 
 @media screen and (min-width: 970px) {
-  /*  */
+  body {
+    background-color: yellow;
+  }
 }
