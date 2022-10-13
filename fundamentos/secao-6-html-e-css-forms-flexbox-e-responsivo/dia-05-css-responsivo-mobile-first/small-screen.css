@@ -15,6 +15,8 @@ html {
 
 body {
   font-size: 20px;
+  margin: auto;
+  max-width: 1080px;
 }
 
 article {
