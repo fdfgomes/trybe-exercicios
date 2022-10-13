@@ -51,5 +51,6 @@ figcaption {
 @media screen and (min-width: 485px) {
   body {
     background-color: red;
+    font-size: 19px;
   }
 }
