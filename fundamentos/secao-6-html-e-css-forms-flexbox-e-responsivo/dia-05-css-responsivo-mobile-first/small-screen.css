@@ -66,6 +66,10 @@ figcaption {
 }
 
 @media screen and (min-width: 970px) {
+  html {
+    margin: 18px;
+  }
+
   body {
     background-color: yellow;
     font-size: 18px;
