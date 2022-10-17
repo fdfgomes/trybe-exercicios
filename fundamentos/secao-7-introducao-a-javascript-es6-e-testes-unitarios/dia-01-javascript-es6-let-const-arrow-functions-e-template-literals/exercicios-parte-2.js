@@ -26,3 +26,25 @@ const longestWord = (string) => {
 console.log(
   longestWord("Antônio foi ao banheiro e não sabemos o que aconteceu")
 ); // retorna 'aconteceu'
+
+// exercício 4
+// função 1
+const substituaX = (nome) => {
+  const frase = "Tryber x aqui!";
+  return frase.replace(/x/gi, nome);
+};
+
+// função 2
+const minhasSkills = (substituaX) => {
+  const skills = ["HTML", "CSS", "JavaScript"];
+  // criar variável com a resposta da função
+  let resposta = `${substituaX}\nMinhas três principais habilidades são:\n`;
+  // fazer um loop, e adicionar cada skill à reposta da função em formato de lista
+  for (let x = 0; x < skills.length; x += 1) {
+    resposta += `* ${skills[x]}\n`;
+  }
+  // enviar resposta
+  return resposta;
+};
+
+console.log(minhasSkills(substituaX("Felipe")));
