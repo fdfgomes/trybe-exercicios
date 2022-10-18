@@ -15,13 +15,32 @@
     <button id="button">Somar</button>
     <p id="result"></p>
     <script>
+      // função para checar se os inputs do usuário são válidos
+      const checkInputValues = (value1, value2) => {
+        // verificar se algum dos campos está vazio, e lançar erro caso o teste dê positivo
+        if (value1.trim() === "" || value2.trim() === "")
+          throw new Error(
+            `Os valores não podem ficar em branco (utilize o zero, se for o caso)!`
+          );
+        // verificar se algum dos valores não é um número (Not a Number), e lançar erro caso o teste retorne positivo
+        if (isNaN(value1 * 1) || isNaN(value2 * 1))
+          throw new Error(`Apenas números são aceitos!`);
+      };
+      // função soma utilizada no eventListener
       function sum() {
-        const value1 = document.getElementById("value1").value;
-        const value2 = document.getElementById("value2").value;
-        const result = Number(value1) + Number(value2);
-        document.getElementById("result").innerHTML = `Resultado: ${result}`;
-        document.getElementById("value1").value = "";
-        document.getElementById("value2").value = "";
+        try {
+          const value1 = document.getElementById("value1").value;
+          const value2 = document.getElementById("value2").value;
+          checkInputValues(value1, value2);
+          const result = Number(value1) + Number(value2);
+          document.getElementById("result").innerHTML = `Resultado: ${result}`;
+        } catch (error) {
+          document.getElementById("result").innerHTML = error.message;
+        } finally {
+          // resetar o valor dos inputs
+          document.getElementById("value1").value = "";
+          document.getElementById("value2").value = "";
+        }
       }
       window.onload = () => {
         const button = document.getElementById("button");
