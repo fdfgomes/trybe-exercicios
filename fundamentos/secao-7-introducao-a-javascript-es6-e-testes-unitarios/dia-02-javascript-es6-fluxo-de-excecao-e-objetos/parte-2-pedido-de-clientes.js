@@ -34,11 +34,14 @@ const order = {
   },
 };
 
-const customerInfo = (order) => {
-  // Adicione abaixo as informações necessárias.
-};
-
-customerInfo(order);
+const customerInfo = (order) =>
+  `Olá ${order.order.delivery.deliveryPerson}, entrega para: ${
+    order.name
+  }, Telefone: ${order.phoneNumber}, ${order.address.street.replace(
+    /rua/gi,
+    "R."
+  )}, Nº: ${order.address.number}, AP: ${order.address.apartment}`;
+console.log(customerInfo(order));
 
 const orderModifier = (order) => {
   // Adicione abaixo as informações necessárias.
