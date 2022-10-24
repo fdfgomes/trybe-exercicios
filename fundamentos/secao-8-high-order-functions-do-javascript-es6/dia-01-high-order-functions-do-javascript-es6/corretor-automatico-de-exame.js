@@ -1,10 +1,10 @@
 const compareAnswers = (correctAnswer, studentAnswer) =>
   correctAnswer === studentAnswer ? 1 : -0.5;
 
-const calculateResult = (correctAnswers, studentAnswers, compareAnswers) => {
+const calculateResult = (correctAnswers, studentAnswers, callback) => {
   let result = 0;
   for (let x = 0; x < correctAnswers.length; x += 1) {
-    result += compareAnswers(correctAnswers[x], studentAnswers[x]);
+    result += callback(correctAnswers[x], studentAnswers[x]);
   }
   return result;
 };
