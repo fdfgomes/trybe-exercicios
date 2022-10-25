@@ -1,7 +1,7 @@
 const books = require('../books');
 const authorBornIn1947 = require('../exercicio1');
 
-describe('Testar as funções desenvolvidas ao resolver os exercícios propostos no dia', () => {
+describe('Testar a função desenvolvida para resolver o primeiro exercício', () => {
   it('Testar se authorBornIn1947 é uma função', () => {
     expect(typeof authorBornIn1947).toBe('function');
   });
