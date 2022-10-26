@@ -1,0 +1,14 @@
+{
+  "name": "dia-02-javascript-es6-high-order-functions-foreach-find-some-every-sort",
+  "version": "1.0.0",
+  "main": "books.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
+}
