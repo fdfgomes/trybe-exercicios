@@ -1,10 +1,8 @@
 const averageAge = (booksArray) =>
-  booksArray.reduce((acc, currValue, currIndex, array) => {
-    const authorAge = currValue.releaseYear - currValue.author.birthYear;
-    if (currIndex === array.length - 1) {
-      return (acc + authorAge) / array.length;
-    }
-    return acc + authorAge;
-  }, 0);
+  booksArray.reduce(
+    (acc, currValue) =>
+      acc + (currValue.releaseYear - currValue.author.birthYear),
+    0
+  ) / booksArray.length;
 
 module.exports = averageAge;
