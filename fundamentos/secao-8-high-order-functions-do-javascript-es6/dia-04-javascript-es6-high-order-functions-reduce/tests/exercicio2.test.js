@@ -5,7 +5,7 @@ describe('Testar função desenvolvida para resolver o segundo exercício', () =
   it('Verificar se reduceNames é uma função', () => {
     expect(typeof reduceNames).toBe('function');
   });
-  it('Veriricar se reduceNames retorna o valor esperado', () => {
+  it('Veriricar se reduceNames retorna o valor esperado: string com os nomes de todas as pessoas autoras', () => {
     const expectedResult =
       'George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.';
     expect(reduceNames(books)).toBe(expectedResult);
