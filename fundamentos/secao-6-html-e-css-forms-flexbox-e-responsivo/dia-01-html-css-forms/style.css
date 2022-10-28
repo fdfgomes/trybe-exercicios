@@ -1,0 +1,104 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form,
+header,
+#success-message {
+  margin: auto;
+  max-width: 640px;
+}
+
+section {
+  position: relative;
+}
+
+[type="text"],
+[type="email"],
+textarea {
+  border-radius: 4px;
+  padding: 4px;
+}
+
+[type="submit"],
+[type="reset"] {
+  padding: 5px 32px;
+  background-color: white;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+#form-body {
+  padding-top: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 2px solid black;
+}
+
+#reply-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+}
+
+#reply-container label {
+  margin-bottom: 12px;
+}
+
+#checkboxes-container {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#checkboxes-container label,
+#checkboxes-container input {
+  cursor: pointer;
+}
+
+#agree-photos-container.invalid {
+  border: 0px;
+  color: red;
+}
+
+#botoes {
+  margin-top: 12px;
+  margin-left: 2px;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.tooltip {
+  position: absolute;
+  top: -34px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px 8px;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.tooltip.reply {
+  right: 0%;
+  top: 39%;
+}
+
+.tooltip.checkbox {
+  top: -2px;
+  right: 0px;
+  padding: 6px 8px;
+}
+
+.tooltip.visible {
+  visibility: visible;
+}
+
+#success-message {
+  display: none;
+}

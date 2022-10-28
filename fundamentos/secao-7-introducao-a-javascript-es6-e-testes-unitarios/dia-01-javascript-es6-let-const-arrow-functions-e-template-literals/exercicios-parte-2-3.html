@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador de cliques</title>
+    <style>
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- exercício 3: criar um contador de cliques simples com html e javascript -->
+    <div id="click-count">0</div>
+    <button id="click-btn">click aqui!</button>
+    <script>
+      // inicializar contagem no 0
+      let clickCount = 0;
+      // adicionar eventListener ao botão
+      document.getElementById("click-btn").addEventListener("click", () => {
+        // incrementar contagem de clicks
+        clickCount += 1;
+        // atualizar o valor renderizado no HTML
+        document.getElementById("click-count").innerText = clickCount;
+      });
+    </script>
+  </body>
+</html>

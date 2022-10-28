@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  height: 70px;
+  background-color: rgba(51, 51, 51, 1);
+  display: flex;
+  color: rgba(255, 255, 255, 0.9);
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+header h3 {
+  font-size: 18px;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 1px;
+}
+
+.header-img {
+  width: 70px;
+}
+
+main {
+  padding-top: 70px;
+}
+
+#paragraph-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#paragraph-container p {
+  font-size: 22px;
+}
+
+#tech-gallery-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+#gallery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* pra deixar 3 elementos, no máximo, por linha usei a seguinte fórmula:
+    largura máxima do elemento #gallery-cards = a + b, onde:
+
+      a = (largura da imagem dentro do card (.gallery-img) + padding utilizado dentro de cada card (#gallery-cards div) * 2) * n;
+        - obs.:
+          - o padding é multiplicado por 2 porque ele é aplicado nos dois lados do card: direita e esquerda;
+          - n é o número de elementos que devem aparecer por linha.
+          
+      b = gap utilizado no container #gallery-cards * (n - 1);
+        - obs.:
+          - n é o número de elementos que devem aparecer por linha;
+          - (n - 1) porque o último elemento não recebe valor de gap à direita.
+  */
+  max-width: calc(((150px + (6px * 2)) * 3) + (10px * 2));
+  gap: 10px;
+}
+
+#gallery-cards div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  padding: 10px 6px;
+  /* para o box-shadow usei como referência os exemplos disponíveis no site
+  https://getcssscan.com/css-box-shadow-examples. Acesso em 11 de out. de 2022. */
+  box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 2.6px;
+}
+
+#gallery-cards div h4 {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#tech-gallery-container hr {
+  margin-left: 10px;
+  width: 150px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}

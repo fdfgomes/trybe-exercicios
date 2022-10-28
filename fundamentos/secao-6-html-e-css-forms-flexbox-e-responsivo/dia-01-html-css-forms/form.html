@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header><h1>Formulário do concurso TrybeTrip</h1></header>
+    <main>
+      <form method="post">
+        <fieldset id="form-body">
+          <section id="full-name-container">
+            <div class="tooltip">O nome deve ter entre 10 e 40 caracteres</div>
+            <label for="full-name">Nome: </label>
+            <input type="text" id="full-name" name="fullName" />
+          </section>
+          <section id="email-container">
+            <div class="tooltip">O nome deve ter entre 10 e 50 caracteres</div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </section>
+          <section id="destiny-options-container">
+            <h4>Destino Preferido:</h4>
+          </section>
+          <section id="reply-container">
+            <h3>
+              Por que você deveria ser a pessoa desenvolvedora a ganhar o
+              concurso TrybeTrip?
+            </h3>
+            <label for="reply">Espaço para digitar a resposta:</label>
+            <div class="tooltip reply">No máximo 500 caracteres</div>
+            <textarea
+              name="reply"
+              id="reply"
+              cols="10"
+              rows="5"
+              required
+            ></textarea>
+          </section>
+          <section>
+            <label for="date"
+              >Qual a melhor data para realizar sua viagem?</label
+            >
+            <input type="date" name="date" id="date" />
+          </section>
+          <section id="checkboxes-container">
+            <div>
+              <label for="agree-1"
+                >Gostaria de receber outras incríveis oportunidades oferecidas
+                pela Trybe?</label
+              >
+              <input type="checkbox" name="agree-1" id="agree-1" />
+            </div>
+            <div id="agree-photos-container">
+              <div class="tooltip checkbox">
+                <sup>*</sup>É necessário aceitar esse termo para prosseguir
+              </div>
+              <label for="agree-photos"
+                >Concordo que imagens das minhas férias poderão ser usadas na
+                divulgação de concursos futuros.<sup>*</sup>
+              </label>
+              <input type="checkbox" name="agree-photos" id="agree-photos" />
+            </div>
+          </section>
+        </fieldset>
+        <section id="botoes">
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Apagar" />
+        </section>
+      </form>
+      <section id="success-message">
+        <h2>
+          Dados enviados com sucesso! Obrigado por participar do concurso
+          TrybeTrip.
+        </h2>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
