@@ -11,8 +11,8 @@ _O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda 
 <!-- https://stackoverflow.com/questions/40023013/tab-space-in-markdown -->
 
 /trybe-exercicios\
-&emsp;└ fundamentos\
-&emsp;&emsp;└ secao-5-javascript-dom-eventos-e-web-storage\
-&emsp;&emsp;└ secao-6-html-e-css-forms-flexbox-e-responsivo\
-&emsp;&emsp;└ secao-7-introducao-a-javascript-es6-e-testes-unitarios :white_check_mark:\
-&emsp;&emsp;└ secao-8-high-order-functions-do-javascript-es6 :hourglass_flowing_sand:
+&emsp;└─&ensp;fundamentos\
+&emsp;&emsp;└─&ensp;secao-5-javascript-dom-eventos-e-web-storage\
+&emsp;&emsp;└─&ensp;secao-6-html-e-css-forms-flexbox-e-responsivo\
+&emsp;&emsp;└─&ensp;secao-7-introducao-a-javascript-es6-e-testes-unitarios :white_check_mark:\
+&emsp;&emsp;└─&ensp;secao-8-high-order-functions-do-javascript-es6 :hourglass_flowing_sand:
