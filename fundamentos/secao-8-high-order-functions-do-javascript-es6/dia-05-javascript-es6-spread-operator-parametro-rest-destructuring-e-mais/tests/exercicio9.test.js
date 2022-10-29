@@ -4,7 +4,7 @@ describe('Testar função desenvolvida para resolver o nono exercício', () => {
   it('Verificar se generateYearSeasonsArr é uma função', () => {
     expect(typeof generateYearSeasonsArr).toBe('function');
   });
-  it('Verificar se yearSeasons retorna o valor esperado', () => {
+  it('Verificar se generateYearSeasonsArr retorna o valor esperado', () => {
     const yearSeasons = {
       spring: ['March', 'April', 'May'],
       summer: ['June', 'July', 'August'],
