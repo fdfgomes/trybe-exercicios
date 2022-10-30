@@ -1,0 +1,15 @@
+{
+  "name": "dia-05-javascript-es6-spread-operator-parametro-rest-destructuring-e-mais",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
+}
